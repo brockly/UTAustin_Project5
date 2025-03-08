@@ -1,70 +1,62 @@
-# Credit Card Users Churn Prediction
+# Computer Vision: Plant Seedling Classification
 
 ## Overview
-This repository hosts the **Credit Card Users Churn Prediction** project, completed as part of the Data Science and Machine Learning course by Great Learning in collaboration with UT Austin. The aim of this project is to build a predictive model to identify customers likely to churn from credit card services.
+This repository contains the **Plant Seedling Classification** project, completed as part of the Computer Vision course offered by Great Learning in collaboration with UT Austin. The aim of the project is to build a convolutional neural network (CNN) classifier capable of accurately identifying plant seedlings from images.
 
-## Business Context
-Thera Bank has observed customer churn in its credit card services, significantly impacting revenue generated through various credit card fees. Understanding reasons behind customer churn and accurately predicting potential churners is critical for proactive retention efforts and maintaining profitability.
+## Context
+Agriculture significantly depends on manual labor for identifying and sorting plant seedlings and weeds, which is a tedious and time-consuming process. Advances in artificial intelligence, especially convolutional neural networks, can greatly streamline this task by automating plant classification, thereby improving efficiency, crop yields, and promoting sustainable agricultural practices.
 
 ## Objective
-- Predict customer churn using machine learning classification models.
-- Identify key factors contributing to customer churn.
-- Provide actionable insights to reduce churn rates and enhance customer retention.
+The objective of this project is to build a CNN-based model to classify images of plant seedlings into their respective species.
 
-## Data Dictionary
+## Data Description
+The dataset provided by Aarhus University Signal Processing Group in collaboration with the University of Southern Denmark includes images of plant seedlings belonging to 12 unique species.
 
-The dataset includes the following customer attributes:
+**Data Files:**
+- Download the image dataset from [this link](https://bit.ly/3XAkS4q).
+- `images.npy`: Numpy array containing images.
+- `Labels.csv`: CSV file containing labels for the images.
 
-| Attribute                 | Description                                                                 |
-|---------------------------|-----------------------------------------------------------------------------|
-| `Customer_Age`            | Age of customer in years                                                    |
-| `Gender`                  | Gender of account holder                                                    |
-| `Dependent_count`         | Number of dependents                                                        |
-| `Education_Level`         | Highest education attained (Graduate, High School, Unknown, etc.)           |
-| `Marital_Status`          | Marital status of account holder                                            |
-| `Months_Inactive_12_mon`  | Number of inactive months in last 12 months                                 |
-| `Contacts_Count_12_mon`   | Number of customer contacts made in last 12 months                          |
-| `Credit_Limit`            | Maximum credit limit available                                              |
-| `Total_Revolving_Bal`     | Outstanding revolving credit balance                                        |
-| `Avg_Open_To_Buy`         | Average available credit limit over the past 12 months                      |
-| `Total_Amt_Chng_Q4_Q1`    | Change in transaction amount from Q4 to Q1                                  |
-| `Total_Trans_Amt`         | Total transaction amount over the past year                                 |
-| `Total_Trans_Ct`          | Total transaction count over the past year                                  |
-| `Total_Ct_Chng_Q4_Q1`     | Change in transaction count from Q4 to Q1                                   |
-| `Avg_Utilization_Ratio`   | Average card utilization ratio                                              |
-| `Attrition_Flag`          | Customer churn status (Existing Customer or Attrited Customer)              |
+**Species Included:**
+- Black-grass
+- Charlock
+- Cleavers
+- Common Chickweed
+- Common Wheat
+- Fat Hen
+- Loose Silky-bent
+- Maize
+- Scentless Mayweed
+- Shepherds Purse
+- Small-flowered Cranesbill
+- Sugar beet
 
-## Project Objective
-- Build predictive models to classify customers into "churn" and "non-churn".
-- Identify significant factors influencing customer churn.
-- Provide actionable insights to help reduce churn rates.
+## Analysis & Modeling Steps
+- Data loading and exploration
+- Image preprocessing and augmentation
+- Building and training CNN models
+- Model evaluation, validation, and tuning
 
 ## Tools & Libraries
 - Python 3.x
-- Pandas
+- TensorFlow / Keras
 - NumPy
+- Pandas
 - Scikit-Learn
 - Matplotlib
 - Seaborn
-- TensorFlow / Keras
-
-## Steps in Analysis & Modeling
-- Data preprocessing and exploratory data analysis
-- Feature engineering and selection
-- Building predictive models (Logistic Regression, Random Forest, Neural Networks)
-- Model evaluation and hyperparameter tuning
 
 ## How to Use
-1. Clone the repository:
+1. Clone this repository:
 ```bash
 git clone [repository_url]
 ```
 
-2. Run the provided Jupyter notebook to explore the analysis and modeling steps.
+2. Open and execute the provided Jupyter notebook (.ipynb file) to replicate the analysis and model training process.
 
 ---
 
 **Author:** Alex Brockman  
-**Course:** Data Science and Machine Learning, Great Learning @ UT Austin  
+**Course:** Computer Vision, Great Learning @ UT Austin  
 **Date:** July 2024
 
