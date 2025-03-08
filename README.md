@@ -10,10 +10,9 @@ Agriculture significantly depends on manual labor for identifying and sorting pl
 The objective of this project is to build a CNN-based model to classify images of plant seedlings into their respective species.
 
 ## Data Description
-The dataset provided by Aarhus University Signal Processing Group in collaboration with the University of Southern Denmark includes images of plant seedlings belonging to 12 unique species.
+The dataset provided by Aarhus University Signal Processing Group in collaboration with the University of Southern Denmark includes images of plant seedlings belonging to 12 unique species. Download the image dataset from [this link](https://bit.ly/3XAkS4q)
 
 **Data Files:**
-- Download the image dataset from [this link](https://bit.ly/3XAkS4q).
 - `images.npy`: Numpy array containing images.
 - `Labels.csv`: CSV file containing labels for the images.
 
